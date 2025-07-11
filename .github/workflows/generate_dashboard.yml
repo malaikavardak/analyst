@@ -24,7 +24,7 @@ jobs:
         run: python dashboard/generate_dashboard.py
 
       - name: Upload dashboard
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bolt-dashboard
           path: dashboard/bolt_dashboard_mock.xlsx
