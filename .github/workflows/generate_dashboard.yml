@@ -1,0 +1,30 @@
+name: Generate Dashboard
+
+on:
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  build-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pandas openpyxl matplotlib
+
+      - name: Run dashboard script
+        run: python dashboard/generate_dashboard.py
+
+      - name: Upload dashboard
+        uses: actions/upload-artifact@v3
+        with:
+          name: bolt-dashboard
+          path: dashboard/bolt_dashboard_mock.xlsx
