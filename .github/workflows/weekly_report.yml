@@ -1,0 +1,32 @@
+name: Weekly Auto Report
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday at 08:00 UTC
+  workflow_dispatch:     # Allows manual triggering
+
+jobs:
+  run-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pandas openpyxl
+
+      - name: Run weekly report script
+        run: python python/weekly_auto_report.py
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: weekly-report
+          path: python/weekly_report_*.xlsx
