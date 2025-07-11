@@ -1,0 +1,65 @@
+# 📊 Bolt Ride-Hailing Analytics: Portfolio Project
+
+This portfolio project simulates real-world data analytics challenges faced by Bolt’s Ride-Hailing Central Operations team. It demonstrates my ability to work with data, define KPIs, automate reporting, and deliver strategic insights.
+
+---
+
+## 🎯 Objectives
+
+- Track and monitor key operational KPIs across multiple cities
+- Identify inefficiencies in driver utilization and ride patterns
+- Automate reporting and performance summaries
+- Simulate real-time dashboards for executive decision-making
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **SQL** — PostgreSQL syntax for querying data
+- **Python** — Used for reporting automation and analysis
+- **Excel / Power BI** — For dashboard mockups
+- **GitHub** — For project organization and presentation
+
+---
+
+## 📂 Project Structure
+
+| Folder | Contents |
+|--------|----------|
+| `/data/` | Simulated data: users, drivers, rides, payments |
+| `/sql/` | KPI and analytics SQL queries |
+| `/python/` | Script to automate weekly performance reports |
+| `/dashboard/` | Dashboard prototypes for executives |
+| `/insights/` | Brief findings and business implications |
+
+---
+
+## 🔍 Sample Business Questions Answered
+
+- What are the busiest ride hours in each city?
+- Which drivers are most utilized and highest rated?
+- What’s the average fare and revenue per city?
+- What is the 7-day rider retention rate?
+- Which cities have the highest cancellation rates?
+
+---
+
+## 📈 Sample Dashboard Preview
+
+*(Include a screenshot here or link to your dashboard in Power BI or Google Sheets)*
+
+---
+
+## ✍️ Summary
+
+This project was created to showcase skills in:
+- Data modeling and KPI tracking
+- Ride-hailing industry analysis
+- Stakeholder-oriented reporting
+- SQL and Python automation
+
+---
+
+## 👋 About Me
+
+I'm a data analyst passionate about mobility, smart cities, and automation. I'm particularly excited about Bolt's mission and fast-moving culture. This project reflects my enthusiasm for solving real-world challenges through data.
