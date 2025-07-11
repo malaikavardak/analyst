@@ -21,7 +21,7 @@ jobs:
           pip install pandas openpyxl matplotlib
 
       - name: Run dashboard script
-        run: python dashboard/generate_dashboard.py
+        run: python python/generate_dashboard.py
 
       - name: Upload dashboard
         uses: actions/upload-artifact@v4
