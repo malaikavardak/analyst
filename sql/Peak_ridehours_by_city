@@ -1,0 +1,9 @@
+--Peak Ride Hours by City
+SELECT
+  city,
+  EXTRACT(HOUR FROM start_time::timestamp) AS ride_hour,
+  COUNT(*) AS ride_count
+FROM rides
+WHERE status = 'completed'
+GROUP BY city, ride_hour
+ORDER BY city, ride_hour;
