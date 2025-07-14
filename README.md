@@ -29,7 +29,7 @@ This portfolio project simulates real-world data analytics challenges faced by B
 | `/data/` | Simulated data: users, drivers, rides, payments |
 | `/sql/` | KPI and analytics SQL queries |
 | `/python/` | Script to automate weekly performance reports |
-| `/dashboard/` | Dashboard prototypes for executives |
+| `Test_Rides` | Dashboard prototypes for executives and further analysis on drivers and users |
 | `/insights/` | Brief findings and business implications |
 
 ---
