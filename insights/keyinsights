@@ -33,6 +33,3 @@ Total Revenue: $8,301.86
 No rider retention data available
 
 The platform shows healthy revenue generation, but lacks visibility into user retention behavior. Without retention or churn tracking, it’s difficult to evaluate customer lifetime value, campaign effectiveness, or user loyalty. In a competitive ride-hailing environment where CAC is high, retention is critical to long-term profitability.
-
-6. Automated Reporting Lays Foundation for Scalable Decision-Making
-SQL and Python scripts will be implemented to automate weekly KPI tracking, supporting scalable reporting for a fast-paced operations team. This ensures that key metrics (e.g., rides completed, revenue per driver, cancellations) are delivered consistently and reliably to decision-makers. The automated workflow enhances operational agility and reduces manual reporting overhead, allowing stakeholders to focus on insight-driven strategy.
