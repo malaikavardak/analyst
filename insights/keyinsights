@@ -1,0 +1,38 @@
+📊 Key Strategic Insights – Bolt Ride-Hailing Analytics Portfolio
+These insights reflect real-world business challenges and your ability to extract meaningful conclusions from operational data — a core expectation for a Data Analyst in the ride-hailing industry.
+
+1. High Ride Cancellation Rate (10.9%)
+Total Rides: 1,000
+Completed Rides: 891 (89.1%)
+Cancelled Rides: 109 (10.9%)
+
+The cancellation rate stands at 10.9%, notably above typical industry benchmarks (3–7%). High cancellations impact both the rider experience and driver earnings, leading to revenue loss, lower platform reliability, and potential churn. This suggests inefficiencies in areas like driver allocation, user experience, or ride-matching algorithms. Immediate attention is required to enhance ride completion rates and protect brand trust.
+
+2. Mid-Length Trips Dominate — A Profitable Market Segment
+Avg Ride Duration: 32.2 minutes
+Avg Ride Distance: 7.91 km
+
+The platform is primarily operating within the mid-tier trip segment, ideal for urban mobility and profitability. These rides are long enough to generate meaningful fare value but short enough to allow for high driver turnover. This positions Bolt well in competing with traditional taxis and short-haul transit solutions, supporting strong revenue per hour without long idle times.
+
+3. Fare Consistency Suggests Operational Stability — But Dynamic Pricing Untapped
+Avg Fare: $9.33
+Avg Payment: $9.32
+Discount Impact: Minimal
+
+The near-identical average between fare and payment reflects stable fare pricing and minimal use of discounts, promotions, or surge pricing. While this provides a consistent user experience and simplifies forecasting, it indicates underutilization of pricing strategies. In high-demand environments, dynamic pricing could unlock higher margins and help balance supply.
+
+4. Strong Driver Ratings but Uneven Utilization
+Avg Driver Rating: 4.72 / 5.0
+Driver Count: 50
+Ride Volume per Driver: Uneven distribution
+
+Overall driver satisfaction is strong, with an average rating of 4.72. However, ride allocation is uneven: some drivers are highly active, while others complete very few trips. This imbalance could lead to idle driver frustration, operational inefficiency, and lower income potential for underutilized drivers — potentially resulting in increased churn or low motivation among fleet members.
+
+5. Revenue is Steady — But Retention Blind Spot Exists
+Total Revenue: $8,301.86
+No rider retention data available
+
+The platform shows healthy revenue generation, but lacks visibility into user retention behavior. Without retention or churn tracking, it’s difficult to evaluate customer lifetime value, campaign effectiveness, or user loyalty. In a competitive ride-hailing environment where CAC is high, retention is critical to long-term profitability.
+
+6. Automated Reporting Lays Foundation for Scalable Decision-Making
+SQL and Python scripts will be implemented to automate weekly KPI tracking, supporting scalable reporting for a fast-paced operations team. This ensures that key metrics (e.g., rides completed, revenue per driver, cancellations) are delivered consistently and reliably to decision-makers. The automated workflow enhances operational agility and reduces manual reporting overhead, allowing stakeholders to focus on insight-driven strategy.
