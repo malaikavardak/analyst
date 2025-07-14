@@ -1,0 +1,96 @@
+Strategic Insights & Business Implications (Recruiter-Facing)
+These insights reflect a deep understanding of operational KPIs, user behavior, and platform efficiency — all of which are critical to data-driven decision-making in a ride-hailing business.
+
+1. High Ride Cancellation Rate (10.9%)
+Business Impact: Lost revenue, poor rider experience, reduced driver motivation.
+Analyst Insight: Cancellation rates are significantly above typical industry benchmarks (usually 3–7%). This suggests systemic friction, possibly due to:
+
+Driver supply gaps or long wait times
+
+Poor ETAs or app matching delays
+
+Weak feedback loops after cancellations
+
+Recommendations:
+
+Segment cancellations by city, hour, and user cohort to pinpoint root causes
+
+Introduce real-time driver load balancing logic for high-cancellation zones
+
+Build a cancellation prediction model (logistic regression or tree-based) to preempt risk triggers
+
+A/B test new app UI flows or cancellation penalties/incentives
+
+Value Add: This approach reduces loss per cancelled ride and improves NPS scores, helping the business retain riders and drivers.
+
+2. Underutilized Driver Supply in Key Cities
+Business Impact: Reduced revenue per driver, uneven user experience (delays in high-demand areas)
+Analyst Insight: A subset of drivers complete <5 rides/week while others are highly active, suggesting supply-demand mismatch. Without intervention, this could:
+
+Increase churn among idle drivers
+
+Lead to longer ETAs for users
+
+Increase operational cost per ride
+
+Recommendations:
+
+Create a “Driver Utilization Index”: Rides per active hour, revenue per km, idle-to-active time ratio
+
+Visualize supply-demand heatmaps by hour and geography
+
+Optimize incentive payouts based on smart utilization clusters
+
+Pilot dynamic shift assignments to guide idle drivers to demand zones
+
+Value Add: This ensures a more evenly distributed fleet, lowers cost per completed ride, and enhances rider wait times — a direct lever for retention.
+
+3. Stable Revenue per Ride but Untapped Dynamic Pricing
+Business Impact: Predictable income but missed opportunities to maximize margin
+Analyst Insight: The average fare ($9.33) and payment ($9.32) are almost identical. This flat pricing structure suggests:
+
+No discounting or surge logic implemented
+
+No usage of ride-time forecasting models
+
+Limited monetization during high-demand hours
+
+Recommendations:
+
+Simulate surge pricing multipliers by time and location using historical demand
+
+Segment rider personas (e.g., commuters, casual, weekend users) and apply tailored promos
+
+Introduce LTV-based pricing logic — offer incentives to high-LTV users and upsell ride classes
+
+Value Add: Improves contribution margin per ride and builds habit loops with dynamic pricing psychology.
+
+4. Lack of Retention Measurement is a Blind Spot
+Business Impact: No clear understanding of user stickiness, campaign ROI, or lifecycle behavior
+Analyst Insight: While the data supports strong transactional analytics, it lacks user retention logic. For growth-focused analytics, retention is a foundational KPI.
+
+Recommendations:
+
+Simulate a users table with registration dates and ride logs
+
+Calculate 7-day and 30-day retention curves (Cohort analysis)
+
+Use funnel analytics (First ride → 2nd ride → Week 1 → Week 4)
+
+Model churn likelihood using ride gaps or app inactivity
+
+Value Add: Informs lifecycle campaigns, boosts ROI on acquisition, and reduces churn-related CAC loss.
+
+5. Reporting is Functional but Can Be Strategic
+Business Impact: Decision-makers need trends, not just snapshots
+Analyst Insight: Weekly automation scripts provide good snapshots, but don't yet show growth patterns or forecast key metrics.
+
+Recommendations:
+
+Add MoM / WoW growth indicators into weekly reporting scripts
+
+Introduce anomaly detection logic (e.g., spikes in cancellations or inactive drivers)
+
+Forecast key metrics like revenue and supply using time-series models (ARIMA, Prophet)
+
+Value Add: Elevates reporting from operational tracking to strategic foresight
