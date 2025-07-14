@@ -45,8 +45,13 @@ This portfolio project simulates real-world data analytics challenges faced by B
 ---
 
 ## 📈 Sample Dashboard Preview
+Executive Overview
+<img width="1311" height="754" alt="image" src="https://github.com/user-attachments/assets/12aab2ab-6cd3-4448-b651-e65c43005dc9" />
 
+Drivers' Performance & Overview
+<img width="1308" height="738" alt="image" src="https://github.com/user-attachments/assets/15042971-c751-437e-931b-ca03cdf9f8ae" />
 
+Users' Overview
 <img width="1319" height="741" alt="image" src="https://github.com/user-attachments/assets/4b3c1103-820d-40c2-b3e2-dcf29867452e" />
 
 
