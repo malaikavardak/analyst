@@ -1,0 +1,53 @@
+Detecting Driver DropOff in Ride-Hailing: A Strategic Benchmark Approach
+  
+Driver Dropoff is a major cost driver and service bottleneck in ride-hailing. If too many drivers leave the platform without replacement, it affects rider experience (longer wait times), driver morale (overload), and platform revenue. Proactively identifying churn allows for timely re-engagement or planning for new driver acquisition.
+
+How Can We Identify When a Driver Has Left?
+Since drivers don’t officially “resign” from the app, we rely on behavioral data such as inactivity periods. If a driver hasn’t completed a ride in a defined number of days, they are considered inactive or churned.
+
+Recommended Benchmark
+We define dropoff based on the number of days since a driver's last completed ride.
+
+Status	Definition
+Active	Ride completed in the last 14 days
+At-Risk	No rides in the last 15–30 days
+Soft Churn	No rides in 31–60 days
+Hard Churn	No rides in 60+ days
+
+Default Benchmark: No rides in 30+ days = churned
+
+This aligns with industry norms where consistent engagement is expected weekly or bi-weekly.
+
+Why 30 Days?
+Behavioral Insight: Active drivers typically complete rides weekly. A 30-day break strongly signals disengagement.
+
+Operational Fit: Monthly cycles match payment, bonus, and scheduling routines.
+
+Industry Alignment: Uber uses similar windows to flag disengaged drivers.
+
+-- SQL To Detect
+
+SELECT driver_id,
+       MAX(ride_date) AS last_ride,
+       CURRENT_DATE - MAX(ride_date) AS days_inactive,
+       CASE
+         WHEN CURRENT_DATE - MAX(ride_date) <= 14 THEN 'Active'
+         WHEN CURRENT_DATE - MAX(ride_date) <= 30 THEN 'At-Risk'
+         WHEN CURRENT_DATE - MAX(ride_date) <= 60 THEN 'Soft Churn'
+         ELSE 'Hard Churn'
+       END AS churn_status
+FROM rides
+GROUP BY driver_id;
+
+Business Value
+  
+Prevents Supply Shortfalls: Early detection allows for re-engagement or replacement planning
+
+Reduces Onboarding Costs: Retaining drivers is more cost-effective than recruiting new ones
+
+Supports Incentive Targeting: Helps design smart bonus or loyalty campaigns for “at-risk” drivers
+
+Feeds Predictive Models: Enhances forecasting of supply-demand gaps
+
+Summary:
+By applying a data-driven churn benchmark based on ride inactivity, we can identify driver attrition early, improve retention strategies, and ensure a balanced driver-rider ecosystem — a critical responsibility for any data analyst in the mobility space.
