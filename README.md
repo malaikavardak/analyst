@@ -46,7 +46,9 @@ This portfolio project simulates real-world data analytics challenges faced by B
 
 ## 📈 Sample Dashboard Preview
 
-*(Include a screenshot here or link to your dashboard in Power BI or Google Sheets)*
+
+<img width="1319" height="741" alt="image" src="https://github.com/user-attachments/assets/4b3c1103-820d-40c2-b3e2-dcf29867452e" />
+
 
 ---
 
