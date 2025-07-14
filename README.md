@@ -34,17 +34,7 @@ This portfolio project simulates real-world data analytics challenges faced by B
 
 ---
 
-## 🔍 Sample Business Questions Answered
-
-- What are the busiest ride hours in each city?
-- Which drivers are most utilized and highest rated?
-- What’s the average fare and revenue per city?
-- What is the 7-day rider retention rate?
-- Which cities have the highest cancellation rates?
-
----
-
-## 📈 Sample Dashboard Preview
+## 📈  Dashboard Preview
 Executive Overview
 <img width="1311" height="754" alt="image" src="https://github.com/user-attachments/assets/12aab2ab-6cd3-4448-b651-e65c43005dc9" />
 
@@ -64,6 +54,7 @@ This project was created to showcase skills in:
 - Ride-hailing industry analysis
 - Stakeholder-oriented reporting
 - SQL and Python automation
+
 
 ---
 
